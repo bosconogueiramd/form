@@ -7,8 +7,8 @@
 </head>
 <body>
     <h1>Formulário Pré-Consulta</h1>
-    <p> Nos ajude a entender sobre sua história de vida e seu histórico de saúde.</p>
-    <p>Preencha seus <strong>dados cadastrais: </strong></p>
+    <p>Aqui teremos um primeiro contato com sua história de vida e seu histórico de saúde.</p>
+    <p>Preencha seus <strong> dados cadastrais: </strong></p>
     <form action="/submit_form.php" method="post">
         <label for="nome">Nome:</label><br>
         <input type="text" id="nome" name="nome"><br><br>
@@ -25,13 +25,25 @@
         <label for="plano_saude">Plano de Saúde:</label><br>
         <input type="text" id="plano_saude" name="plano_saude"><br><br>
 
-        <label for="atividade_fisica"><strong>Atividade Física -</strong> Meu nível de atividade física:</label><br>
-        <input type="radio" id="sim_atividade" name="atividade_fisica" value="Não faço qualquer atividade física">
-        <label for="sim_atividade">Sim</label><br>
-        <input type="radio" id="nao_atividade" name="atividade_fisica" value="Não">
-        <label for="nao_atividade">Não</label><br><br>
+        <label for="atividade_fisica"><strong> Atividade Física - </strong> Meu nível de atividade física:</label><br>
+        <input type="radio" id="sim_atividade" name="atividade_fisica" value="Sim">
+        <label for="Nao faco atividade fisica">Não faço qualquer atividade física.</label><br>
+        <input type="radio" id="Caminhadas" name="Caminhadas" value="Caminhadas">
+        <label for="Caminhadas">Caminhadas.</label><br>
+        <input type="radio" id="Hidroginástica" name="Hidroginástica" value="Hidroginástica">
+        <label for="Hidroginástica">Hidroginástica.</label><br>
+        <input type="radio" id="Pilates" name="Pilates" value="Pilates">
+        <label for="Pilates">Pilates.</label><br>
+        <input type="radio" id="Musculação" name="Musculação" value="Musculação">
+        <label for="Musculação">Musculação.</label><br>
+        <input type="radio" id="Crossfit" name="Crossfit" value="Crossfit">
+        <label for="Crossfit">Crossfit.</label><br>
+        <input type="radio" id="Beach Tennis" name="Beach Tennis" value="Beach Tennis">
+        <label for="Crossfit">Beach Tennis.</label><br>
+        <input type="text" id="Outra atividade" name="Outra atividade" value="Outra atividade">
+        <label for="Outra atividade">Escreva aqui uma outra atividade física que pratique</label><br></form><br>
 
-        <label for="bebe">Bebo?</label><br>
+        <label for="bebe"><strong> Etilismo </strong></label><br>
         <input type="radio" id="nao_bebe" name="bebe" value="Não">
         <label for="nao_bebe">Não</label><br>
         <input type="radio" id="bebe_festivas" name="bebe" value="Bebo apenas em ocasiões festivas, 1 vez a cada 2 meses e em pequena quantidade.">
