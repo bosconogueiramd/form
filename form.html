@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Pré-Consulta</title>
+</head>
+<body>
+    <h1>Formulário Pré-Consulta</h1>
+    <p>Aqui teremos um primeiro contato com sua história de vida e seu histórico de saúde.</p>
+    <p>Preencha seus dados cadastrais:</p>
+    <form action="/submit_form.php" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="idade">Idade:</label><br>
+        <input type="text" id="idade" name="idade"><br><br>
+
+        <label for="profissao">Profissão:</label><br>
+        <input type="text" id="profissao" name="profissao"><br><br>
+
+        <label for="cidade">Cidade onde mora:</label><br>
+        <input type="text" id="cidade" name="cidade"><br><br>
+
+        <label for="plano_saude">Plano de Saúde:</label><br>
+        <input type="text" id="plano_saude" name="plano_saude"><br><br>
+
+        <label for="atividade_fisica">Atividade Física - Meu nível de atividade física:</label><br>
+        <input type="radio" id="sim_atividade" name="atividade_fisica" value="Sim">
+        <label for="sim_atividade">Sim</label><br>
+        <input type="radio" id="nao_atividade" name="atividade_fisica" value="Não">
+        <label for="nao_atividade">Não</label><br><br>
+
+        <label for="bebe">Bebo?</label><br>
+        <input type="radio" id="nao_bebe" name="bebe" value="Não">
+        <label for="nao_bebe">Não</label><br>
+        <input type="radio" id="bebe_festivas" name="bebe" value="Bebo apenas em ocasiões festivas, 1 vez a cada 2 meses e em pequena quantidade.">
+        <label for="bebe_festivas">Bebo apenas em ocasiões festivas, 1 vez a cada 2 meses e em pequena quantidade.</label><br>
+        <input type="radio" id="bebo_fins_semana" name="bebe" value="Bebo quase todos os fins de semana.">
+        <label for="bebo_fins_semana">Bebo quase todos os fins de semana.</label><br>
+        <input type="radio" id="bebo_mais" name="bebe" value="Bebo mais do que nos fins de semana.">
+        <label for="bebo_mais">Bebo mais do que nos fins de semana.</label><br>
+        <input type="radio" id="dependente_alcool" name="bebe" value="Me considero um dependente grave do álcool.">
+        <label for="dependente_alcool">Me considero um dependente grave do álcool.</label><br><br>
+
+        <label for="atividade_fisica_especifica">Atividade Física - Se você faz alguma atividade física, nos ajude a entender seu nível de intensidade e frequência nessa atividade:</label><br>
+        <textarea id="atividade_fisica_especifica" name="atividade_fisica_especifica" rows="4" cols="50"></textarea><br><br>
+
+        <label for="tabagismo">Tabagismo - Você fuma ou já fumou?</label><br>
+        <input type="radio" id="nao_fuma" name="tabagismo" value="Não">
+        <label for="nao_fuma">Não</label><br>
+        <input type="radio" id="fumou" name="tabagismo" value="Fumou">
+        <label for="fumou">Fumou</label><br><br>
+
+        <label for="tempo_fumante">Tabagismo - Se já fumou ou fuma, por quanto tempo fumou e qual a quantidade máxima de cigarros já fumou em qualquer período da vida:</label><br>
+        <textarea id="tempo_fumante" name="tempo_fumante" rows="4" cols="50"></textarea><br><br>
+
+        <label for="etilismo">Etilismo - Sobre etilismo (consumo de bebidas alcoólicas) eu me considero:</label><br>
+        <input type="radio" id="nao_utilizo" name="etilismo" value="Não utilizo, nem utilizei">
+        <label for="nao_utilizo">Não utilizo, nem utilizei</label><br>
+        <input type="radio" id="nao_utilizo_mais" name="etilismo" value="Não utilizo mais, já utilizei no passado.">
+        <label for="nao_utilizo_mais">Não utilizo mais, já utilizei no passado.</label><br>
+        <input type="radio" id="dependente_etilismo" name="etilismo" value="Sou dependente.">
+        <label for="dependente_etilismo">Sou dependente.</label><br>
+        <input type="radio" id="nao_sei_doencas" name="etilismo" value="Até onde sei, não tenho doenças">
+        <label for="nao_sei_doencas">Até onde sei, não tenho doenças</label><br><br>
+
+        <label for="doencas">Doenças - Marque todas as doenças que você possui:</label><br>
+        <input type="checkbox" id="pressao_alta" name="doencas" value="Pressão Alta (Hipertensão Arterial Sistêmica)">
+        <label for="pressao_alta">Pressão Alta (Hipertensão Arterial Sistêmica)</label><br>
+        <input type="checkbox" id="diabetes" name="doencas" value="Diabetes">
+        <label for="diabetes">Diabetes</label><br>
+        <input type="checkbox" id="tireoide" name="doencas" value="Problemas com a Tireóide">
+        <label for="tireoide">Problemas com a Tireóide</label><br>
+        <input type="checkbox" id="chikungunya" name="doencas" value="Chikugunya">
+        <label for="chikungunya">Chikugunya</label><br>
+        <input type="checkbox" id="cancer" name="doencas" value="Câncer">
+        <label for="cancer">Câncer</label><br>
+        <input type="checkbox" id="outras_doencas" name="doencas" value="Outras doenças">
+        <label for="outras_doencas">Outras doenças</label><br><br>
+
+        <label for="substancias_ilicitas">Substâncias ilícitas - Sobre uso de drogas ilícitas:</label><br>
+        <textarea id="substancias_ilicitas" name="substancias_ilicitas" rows="4" cols="50"></textarea><br><br>
+
+        <label for="historico_doencas">Histórico de Doenças - Minhas doenças são:</label><br>
+        <textarea id="historico_doencas" name="historico_doencas" rows="4" cols="50"></textarea><br><br>
+
+        <label for="historico_familiar">História Familiar - Quais as doenças presentes na família?</label><br>
+        <textarea id="historico_familiar" name="historico_familiar" rows="4" cols="50"></textarea><br><br>
+
+        <label for="cirurgias">Cirurgias já realizadas - Eu já me operei de:</label><br>
+        <textarea id="cirurgias" name="cirurgias" rows="4" cols="50"></textarea><br><br>
+
+        <label for="medicamentos">Uso de medicamentos - Eu utilizo de forma contínua os seguintes medicamentos:</label><br>
+        <textarea id="medicamentos" name="medicamentos" rows="4" cols="50"></textarea><br><br>
+
+        <label for="alergias">Alergias - Sobre alergias:</label><br>
+        <textarea id="alergias" name="alergias" rows="4" cols="50"></textarea><br><br>
+
+        <label for="articulacoes">Articulações - Marque as opções que se aplicam:</label><br>
+        <input type="checkbox" id="joelho_esquerdo" name="articulacoes" value="Joelho esquerdo">
+        <label for="joelho_esquerdo">Joelho esquerdo</label><br>
+        <input type="checkbox" id="joelho_direito" name="articulacoes" value="Joelho direito">
+        <label for="joelho_direito">Joelho direito</label><br>
+        <input type="checkbox" id="ambos_joelhos" name="articulacoes" value="Os dois joelhos">
+        <label for="ambos_joelhos">Os dois joelhos</label><br>
+        <input type="checkbox" id="outras_articulacoes" name="articulacoes" value="Outras articulações">
+        <label for="outras_articulacoes">Outras articulações</label><br><br>
+
+        <label for="sintomas_articulacoes">Sintomas - Descreva quaisquer sintomas ou problemas articulares que você tenha:</label><br>
+        <textarea id="sintomas_articulacoes" name="sintomas_articulacoes" rows="4" cols="50"></textarea><br><br>
+
+        <label for="exames_realizados">Exames já realizados - Sobre exames já realizados, relacionados ao motivo da consulta:</label><br>
+        <textarea id="exames_realizados" name="exames_realizados" rows="4" cols="50"></textarea><br><br>
+
+        <label for="resultado_exames">Resultado de Exames online - Se você já realizou exames em uma clínica que lhe entregou um login e senha para acessar o resultado do exame on-line, favor informar os dados de acesso:</label><br>
+        <label for="clinica_imagem">Nome da Clínica de Imagem:</label><br>
+        <input type="text" id="clinica_imagem" name="clinica_imagem"><br><br>
+        <label for="login_protocolo">Login ou Protocolo de acesso:</label><br>
+        <input type="text" id="login_protocolo" name="login_protocolo"><br><br>
+        <label for="senha_exame">Senha:</label><br>
+        <input type="text" id="senha_exame" name="senha_exame"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
